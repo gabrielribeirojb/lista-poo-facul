@@ -1,0 +1,9 @@
+package entities;
+
+public class Calculadora {
+
+	
+	public static Integer calculaSoma(int a, int b) {
+		return a + b;
+	}
+}

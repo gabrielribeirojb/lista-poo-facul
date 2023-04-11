@@ -1,0 +1,44 @@
+package entities;
+
+public class Calculadora {
+
+	
+	public static Double calculaSoma(Double a, Double b) {
+		return a + b;
+	}
+	
+	public static Double calculaSubtracao(Double a, Double b) {
+		return a - b;
+	}
+	
+	public static Double calculaDiv(Double a, Double b) {
+		return a / b;
+	}
+	
+	public static Double calculaMult(Double a, Double b) {
+		return a * b;
+	}
+	
+	public static Double calculaPotencia(Double a, double b) {
+		return Math.pow(a, b);
+	}
+	
+	public static void calculaRaizQuadrada(Double a, double b) {
+		System.out.println("Raiz quadrada do primeiro numero: " + Math.sqrt(a));
+		System.out.println("Raiz quadrada do segundo numero: " + Math.sqrt(b));
+	}
+	
+	public static void calculaRaizCubica(Double a, double b) {
+		System.out.println("Raiz cubica do primeiro numero: " + Math.pow(a, (1 / 3)));
+		System.out.println("Raiz cubica do segundo numero: " + Math.pow(b, (1 / 3)));
+	}
+	
+	public static void todasAsOperacoes(Double a, Double b) {
+		System.out.println("Soma dos numeros: " + Calculadora.calculaSoma(a, b));
+		System.out.println("Subtracao dos numeros: " + Calculadora.calculaSubtracao(a, b));
+		System.out.println("Divisao dos numeros: " + Calculadora.calculaDiv(a, b));
+		System.out.println("Multiplicacao dos numeros: " + Calculadora.calculaMult(a, b));
+		Calculadora.calculaRaizQuadrada(a, b);
+		Calculadora.calculaRaizCubica(a, b);
+	}
+}

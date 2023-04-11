@@ -1,0 +1,21 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite a operacao que deseja fazer: ");
+		System.out.println("1: Adicao \n" + 
+		"2: Subtracao \n" +
+		"3: Divisao \n" + 
+		"4: Multiplicacao \n" +
+		"5: Raiz quadrada e raiz cubica" +
+		"6: Todas as operacoes");
+		
+		
+	}
+
+}

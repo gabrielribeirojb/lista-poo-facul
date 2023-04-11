@@ -1,0 +1,33 @@
+package main;
+
+import java.util.Scanner;
+
+import entities.Calculadora;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite a operacao que deseja fazer: ");
+		System.out.println("1: Adicao \n" + 
+		"2: Subtracao \n" +
+		"3: Divisao \n" + 
+		"4: Multiplicacao \n" +
+		"5: Raiz quadrada e raiz cubica" +
+		"6: Todas as operacoes");
+		
+		Integer operacao = sc.nextInt();
+		
+		System.out.println("Digite dois numeros: ");
+		
+		Double a = sc.nextDouble();
+		Double b = sc.nextDouble();
+		
+		switch(operacao) {
+			case 1:
+				Calculadora.calculaSoma(a, b);
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+package entities;
+
+public class Calculadora {
+
+	
+	public static Double calculaSoma(Double a, Double b) {
+		return a + b;
+	}
+	
+	public static Double calculaSubtracao(Double a, Double b) {
+		return a - b;
+	}
+	
+	public static Double calculaDiv(Double a, Double b) {
+		return a / b;
+	}
+	
+	public static Double calculaMult(Double a, Double b) {
+		return a * b;
+	}
+	
+	public static Double calculaPotencia(Double a, double b) {
+		return Math.pow(a, b);
+	}
+}

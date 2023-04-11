@@ -1,0 +1,53 @@
+package main;
+
+import java.util.Scanner;
+
+import entities.Calculadora;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite a operacao que deseja fazer: ");
+		System.out.println("1: Adicao \n" + 
+		"2: Subtracao \n" +
+		"3: Divisao \n" + 
+		"4: Multiplicacao \n" +
+		"5: Raiz quadrada e raiz cubica\n" +
+		"6: Todas as operacoes");
+		
+		Integer operacao = sc.nextInt();
+		
+		System.out.println("Digite dois numeros: ");
+		
+		double a = sc.nextDouble();
+		double b = sc.nextDouble();
+		
+		switch(operacao) {
+			case 1:
+				Calculadora.calculaSoma(a, b);
+				break;
+			case 2:
+				Calculadora.calculaSubtracao(a, b);
+				break;
+			case 3:
+				Calculadora.calculaDiv(a, b);
+				break;
+			case 4:
+				Calculadora.calculaMult(a, b);
+				break;
+			case 5:
+				Calculadora.calculaRaizQuadrada(a, b);
+				Calculadora.calculaRaizCubica(a, b);
+				break;
+			case 6:
+				Calculadora.todasAsOperacoes(a, b);
+				break;
+			default:
+				System.out.println("Entrada invalida");
+				break;
+		}
+	}
+
+}
